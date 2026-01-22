@@ -2,7 +2,7 @@ using System.IO;
 class Journal
 {
     private List<Entry> _entries = new List<Entry>();
-    string filename;
+    private string filename = "journal.txt";
 
     public void Display()
     {
@@ -38,9 +38,9 @@ class Journal
         AppendEntry(e);
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
-            outputFile.Write($"{e.dateText}|");
-            outputFile.Write($"{e.prompt}|");
-            outputFile.Write($"{e.usertext}|");
+            outputFile.WriteLine($"{e.dateText}|");
+            outputFile.WriteLine($"{e.prompt}|");
+            outputFile.WriteLine($"{e.usertext}");
         }
     }
 
