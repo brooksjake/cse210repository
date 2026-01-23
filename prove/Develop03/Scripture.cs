@@ -43,15 +43,14 @@ class Scripture
             {
                 _words[indexpick].Hide();
                 hiddenCount++;
+                n++;
             }
-
-            n++;
         } while (n < 2);
     }
 
     public bool CompletelyHidden()
     {
-        return hiddenCount >= _words.Count-2;
+        return hiddenCount >= _words.Count-1;
     }
 
 }
