@@ -23,10 +23,30 @@ public class Activity
     
     protected void EndingMessage()
     {
-        
+        Console.WriteLine("-------------------------------");
+        Console.WriteLine("Well done! Thank you for your participation");
     }
     
-    protected void DisplayPauseAnimation(int animDuration)
+    protected void DisplayCountDownAnimation(int animDuration)
+    {
+        for (int i = animDuration; i > 0; i--)
+        {
+            Console.Write(i);
+            Thread.Sleep(1000);
+            
+            if (i < 10)
+            {
+                Console.Write("\b \b");
+            } else if (i < 100)
+            {
+                Console.Write("\b \b\b");
+            } else {
+                Console.Write("\b \b\b\b");
+            }
+        }
+    }
+    
+    protected void DisplayPauseFishAnimation(int animDuration)
     {
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(animDuration);
