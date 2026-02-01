@@ -9,6 +9,8 @@ public class ListingActivty : Activity
     {
         setName("Relax by Gratitude Listing");
         setDescription("This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
+        _prompts = new List<string>();
+        _responseItems = new List<string>();
         _prompts.Add("Who are people that you appreciate?");
         _prompts.Add("What are personal strengths of yours?");
         _prompts.Add("Who are people that you have helped this week?");

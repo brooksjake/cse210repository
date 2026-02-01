@@ -10,15 +10,18 @@ class Program
         bool listingPicked = false;
         
         Random random = new Random();
-        
-        int pick = random.Next(0,2);
-        if (breathingPicked) {DoReflect();}
-        else if (reflectPicked) {DoList();}
-        else if (listingPicked)
+        while (true)
         {
-            if (pick == 0) {DoBreathe();}
-            else if (pick == 1) {DoList();}
-            else {DoReflect();}
+            int pick = random.Next(0,2);
+            if (!breathingPicked) {DoBreathe(); breathingPicked=true;}
+            else if (!reflectPicked) {DoReflect(); reflectPicked=true;}
+            else if (!listingPicked)
+            {
+                if (pick == 0) {DoBreathe(); breathingPicked=true;}
+                else if (pick == 1) {DoList();}
+                else {DoReflect();}
+                
+            }
         }
     }
     

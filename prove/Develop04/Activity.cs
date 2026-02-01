@@ -53,43 +53,43 @@ public class Activity
         while (DateTime.Now < endTime)
         {
             Console.Write(">");
-            Thread.Sleep(200);
+            Thread.Sleep(250);
             Console.Write("\b \b");
             
-            Console.Write(" >");
-            Thread.Sleep(200);
+            Console.Write(".>");
+            Thread.Sleep(250);
             Console.Write("\b \b\b");
             
-            Console.Write("  >");
-            Thread.Sleep(200);
+            Console.Write("..>");
+            Thread.Sleep(250);
             Console.Write("\b \b\b\b");
             
-            Console.Write("   >");
-            Thread.Sleep(200);
+            Console.Write("...>");
+            Thread.Sleep(250);
             Console.Write("\b \b\b\b\b");
             
-            Console.Write("    >");
-            Thread.Sleep(200);
+            Console.Write("....>");
+            Thread.Sleep(250);
             Console.Write("\b \b\b\b\b\b");
             
-            Console.Write("    <");
-            Thread.Sleep(200);
+            Console.Write("....<");
+            Thread.Sleep(250);
             Console.Write("\b \b\b\b\b\b");
 
-            Console.Write("   <");
-            Thread.Sleep(200);
+            Console.Write("...<");
+            Thread.Sleep(250);
             Console.Write("\b \b\b\b\b");
             
-            Console.Write("  <");
-            Thread.Sleep(200);
+            Console.Write("..<");
+            Thread.Sleep(250);
             Console.Write("\b \b\b\b");
             
-            Console.Write(" <");
-            Thread.Sleep(200);
+            Console.Write(".<");
+            Thread.Sleep(250);
             Console.Write("\b \b\b");
             
             Console.Write("<");
-            Thread.Sleep(200);
+            Thread.Sleep(250);
             Console.Write("\b \b");
         }
     }
