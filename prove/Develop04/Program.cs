@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         bool breathingPicked = false;
         bool reflectPicked = false;
         bool listingPicked = false;
