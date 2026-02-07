@@ -1,0 +1,3 @@
+Get back home on time:30:False
+Go to the temple at least once every 2 weeks:500:False:1
+Make a good nutritional meal each day at noon:50:False:0:7:60
