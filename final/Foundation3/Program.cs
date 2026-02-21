@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 class Program
 {
@@ -34,6 +33,8 @@ class Program
         );
 
         List<Event> events = new List<Event> {historyLecture, jazzGala, solarEclipse};
+        
+        Console.WriteLine("EVENT CATALOGUE:");
 
         foreach (Event ev in events)
         {
